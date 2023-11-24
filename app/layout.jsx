@@ -1,6 +1,6 @@
 import '@/ui/globals.css';
-import { Nav } from '@/components/index';
 import { oxygen } from '@/ui/fonts';
+import { Nav } from '@/components/index';
 
 export const metadata = {
   title: 'The NotePad.',

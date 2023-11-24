@@ -19,3 +19,9 @@ body {
   background: var(--white);
   color: var(--black);
 }
+
+.custom-btn {
+  border-radius: 10px;
+  border: 1px solid #1a1a1a;
+  box-shadow: 2px 2px 0px 0px #111010;
+}
