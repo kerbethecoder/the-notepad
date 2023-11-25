@@ -1,6 +1,6 @@
 import '@/ui/globals.css';
 import { oxygen } from '@/ui/fonts';
-import { Nav } from '@/components/index';
+import { Nav, Footer } from '@/components/index';
 
 export const metadata = {
   title: 'The NotePad.',
@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
       <body className={`${oxygen.className}`}>
         <Nav />
         <main className="app">{children}</main>
+        <Footer />
       </body>
     </html>
   );
