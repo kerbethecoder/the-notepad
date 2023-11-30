@@ -20,22 +20,22 @@ export default function Nav() {
     <nav className="flex justify-center items-center m-5 gap-10">
       <div className="flex gap-5 pt-2 h-fit">
         <Link
-          href="/js-scripts"
+          href="/js-snippets"
           className={
-            isActive('/js-scripts')
+            isActive('/js-snippets')
               ? 'font-bold underline underline-offset-4 decoration-2'
               : styles.transitionA
           }>
-          JavaScript
+          JS Snippets
         </Link>
         <Link
-          href="/font-styles"
+          href="/font-pairings"
           className={
-            isActive('/font-styles')
+            isActive('/font-pairings')
               ? 'font-bold underline underline-offset-4 decoration-2'
               : styles.transitionA
           }>
-          Font Styles
+          Font Pairings
         </Link>
         <Link
           href="/color-palettes"

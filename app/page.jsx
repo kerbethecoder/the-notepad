@@ -1,5 +1,9 @@
+'use client';
+
 import Image from 'next/image';
-import { FaArrowUpRightFromSquare, FaArrowRightLong } from 'react-icons/fa6';
+import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll';
+import { FaArrowRightLong } from 'react-icons/fa6';
 
 import { Button } from '@/ui/index';
 import { viga } from '@/ui/fonts';
@@ -22,8 +26,12 @@ export default function Home() {
             <br /> developer in the future.
           </p>
           <div className="flex mt-10 ml-16 gap-5">
-            <Button title="Who's the Developer?" hex="bgYellow" />
-            <Button title="Explore from the bottom." hex="bgWhite" />
+            <Link href="/developer">
+              <Button title="Who's the Developer?" hex="bgYellow" />
+            </Link>
+            <ScrollLink to="footer" smooth={true} duration={500} offset={-70}>
+              <Button title="Explore from the bottom." hex="bgWhite" />
+            </ScrollLink>
           </div>
         </div>
         <Image src="/hero-img.png" alt="hero-image" width={400} height={300} />
@@ -57,13 +65,13 @@ export default function Home() {
           <br />
           your own creative endeavors.
         </p>
-        <div className="mt-10">
+        <Link href="/color-palettes" className="mt-10">
           <Button
             title="Go to Color Palettes"
             hex="bgRed"
             icon={<FaArrowRightLong />}
           />
-        </div>
+        </Link>
       </div>
 
       <div
@@ -77,7 +85,7 @@ export default function Home() {
         />
         <div>
           <h3 className={`${viga.className} text-lg mb-2.5`}>FONT PAIRINGS</h3>
-          <p>
+          <p className="mb-2.5">
             Discover a dedicated page showcasing a developer's recent font
             pairings from
             <br /> their previous projects. Explore the synergy of typefaces,
@@ -89,13 +97,13 @@ export default function Home() {
             <br /> collection offers insights into the world of typography and
             design.
           </p>
-          <div className="mt-2.5">
+          <Link href="/font-pairings">
             <Button
               title="Explore Font Pairings"
               hex="bgCyan"
               icon={<FaArrowRightLong />}
             />
-          </div>
+          </Link>
         </div>
       </div>
 
@@ -117,13 +125,13 @@ export default function Home() {
             is your handy
             <br /> toolbox for smoother and more productive development.
           </p>
-          <div className="mt-2.5">
+          <Link href="/js-snippets" className="mt-2.5">
             <Button
               title="JavaScript Snippets"
               hex="bgBlueGreen"
               icon={<FaArrowRightLong />}
             />
-          </div>
+          </Link>
         </div>
         <Image
           src="/js-img.png"
@@ -160,13 +168,13 @@ export default function Home() {
           <br /> knowledge to create stunning, responsive, and feature-rich web
           applications with ease.
         </p>
-        <div className="mt-10">
+        <Link href="/quick-starts" className="mt-10">
           <Button
             title="Check it out"
             hex="bgRed"
             icon={<FaArrowRightLong />}
           />
-        </div>
+        </Link>
       </div>
     </main>
   );

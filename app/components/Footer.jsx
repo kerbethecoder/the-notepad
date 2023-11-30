@@ -11,7 +11,7 @@ import { styles } from '@/ui/style';
 
 export default function Footer() {
   return (
-    <footer className={`${inter.className} bg-blck px-16`}>
+    <footer id="footer" className={`${inter.className} bg-blck px-16`}>
       <div className={`${styles.flexBetween} py-20`}>
         <div>
           <h2 className="text-whte text-5xl font-bold pl-1">@kerbethecoder</h2>
@@ -88,7 +88,7 @@ export default function Footer() {
           href="https://nextjs.org/"
           rel="noopener noreferrer"
           target="_blank"
-          className="font-bold underline underline-offset-2 hover:text-rd">
+          className="font-bold underline underline-offset-2 hover:text-blgrn">
           NextJS
         </a>
         , and designed with{' '}
@@ -96,7 +96,7 @@ export default function Footer() {
           href="https://tailwindcss.com/"
           rel="noopener noreferrer"
           target="_blank"
-          className="font-bold underline underline-offset-2 hover:text-blgrn">
+          className="font-bold underline underline-offset-2 hover:text-rd">
           Tailwind CSS
         </a>
         .
