@@ -37,7 +37,7 @@ export default function Home() {
         <Image src="/hero-img.png" alt="hero-image" width={400} height={300} />
       </div>
 
-      <div className="flex justify-center items-center my-32">
+      <div className={`${styles.flexCenter} my-32`}>
         <Image src="/hr.svg" alt="horizontal rule" width={1100} height={1} />
       </div>
 
@@ -141,7 +141,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex justify-center items-center my-32">
+      <div className={`${styles.flexCenter} my-32`}>
         <Image src="/hr.svg" alt="horizontal rule" width={1100} height={1} />
       </div>
 

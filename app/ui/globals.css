@@ -5,6 +5,7 @@
 :root {
   --white: #eeeeee;
   --black: #1a1a1a;
+  --dimBlack: #3e3e3e;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -24,4 +25,15 @@ body {
   border-radius: 10px;
   border: 1px solid #1a1a1a;
   box-shadow: 2px 2px 0px 0px #111010;
+}
+
+.strk-outline {
+  -webkit-text-stroke: 2px var(--black);
+}
+
+.code-block {
+  background-color: var(--dimBlack);
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
 }
