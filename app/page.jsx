@@ -17,13 +17,10 @@ export default function Home() {
           <h1 className={`${viga.className} text-5xl`}>The NotePad.</h1>
           <p className="my-2 text-lg">
             The notepad is a personal repository of tools, lessons, and other
-            things that
-            <br />
-            helps on the developer&#39;s transformative journey, beginning with
-            the aspiration
-            <br />
-            of just being a front-end web developer to becoming a full-stack web
-            <br /> developer in the future.
+            things that <br /> helps on the developer&#39;s transformative
+            journey, beginning with the aspiration <br /> of just being a
+            front-end web developer to becoming a full-stack web <br />{' '}
+            developer in the future.
           </p>
           <div className="flex mt-10 ml-16 gap-5">
             <Link href="/developer">
@@ -55,15 +52,11 @@ export default function Home() {
         </h3>
         <p className="text-center">
           Explore a developer's curated collection of recent color palettes,
-          offering a visual journey through the
-          <br />
-          harmonious and eye-catching color schemes used in their previous
-          projects. From vibrant web designs to
-          <br />
-          sleek mobile apps, this page showcases the artistry of color selection
-          in coding, providing inspiration for
-          <br />
-          your own creative endeavors.
+          offering a visual journey through the <br /> harmonious and
+          eye-catching color schemes used in their previous projects. From
+          vibrant web designs to <br /> sleek mobile apps, this page showcases
+          the artistry of color selection in coding, providing inspiration for{' '}
+          <br /> your own creative endeavors.
         </p>
         <Link href="/color-palettes" className="mt-10">
           <Button
@@ -87,15 +80,12 @@ export default function Home() {
           <h3 className={`${viga.className} text-lg mb-2.5`}>FONT PAIRINGS</h3>
           <p className="mb-2.5">
             Discover a dedicated page showcasing a developer's recent font
-            pairings from
-            <br /> their previous projects. Explore the synergy of typefaces,
-            their balance, and the
-            <br /> aesthetic appeal in various applications, including websites,
-            mobile apps, or
-            <br /> print materials. Whether you seek design inspiration or
-            practical guidance, this
-            <br /> collection offers insights into the world of typography and
-            design.
+            pairings from <br /> their previous projects. Explore the synergy of
+            typefaces, their balance, and the <br /> aesthetic appeal in various
+            applications, including websites, mobile apps, or <br /> print
+            materials. Whether you seek design inspiration or practical
+            guidance, this <br /> collection offers insights into the world of
+            typography and design.
           </p>
           <Link href="/font-pairings">
             <Button
@@ -114,15 +104,11 @@ export default function Home() {
           <h3 className={`${viga.className} text-lg mb-2.5`}>JS SNIPPETS</h3>
           <p className="text-right">
             Have a question like those above? Visit the developer&#39;s go-to
-            resource
-            <br /> for essential JavaScript snippets, designed to simplify
-            common tasks in
-            <br /> your projects. Find quick solutions for centering divs,
-            mapping through
-            <br /> arrays, harnessing object keys for efficient mapping, and
-            more. Whether
-            <br /> you&#39;re a seasoned coder or just starting, this collection
-            is your handy
+            resource <br /> for essential JavaScript snippets, designed to
+            simplify common tasks in <br /> your projects. Find quick solutions
+            for centering divs, mapping through <br /> arrays, harnessing object
+            keys for efficient mapping, and more. Whether <br /> you&#39;re a
+            seasoned coder or just starting, this collection is your handy{' '}
             <br /> toolbox for smoother and more productive development.
           </p>
           <Link href="/js-snippets" className="mt-2.5">
@@ -159,14 +145,13 @@ export default function Home() {
         </h3>
         <p className="text-center">
           Explore the developer&#39;s quick start page for front-end
-          development, offering a treasure trove of resources for various
-          <br />
+          development, offering a treasure trove of resources for various <br />{' '}
           technologies such as React, Gatsby, Vue.js, and more. Dive into
-          step-by-step guides and code examples to kickstart your
-          <br /> project swiftly. Discover seamless integrations with popular
-          CSS frameworks like Tailwind CSS, providing with the tools and
-          <br /> knowledge to create stunning, responsive, and feature-rich web
-          applications with ease.
+          step-by-step guides and code examples to kickstart your <br /> project
+          swiftly. Discover seamless integrations with popular CSS frameworks
+          like Tailwind CSS, providing with the tools and <br /> knowledge to
+          create stunning, responsive, and feature-rich web applications with
+          ease.
         </p>
         <Link href="/quick-starts" className="mt-10">
           <Button
