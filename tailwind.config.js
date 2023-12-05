@@ -22,6 +22,7 @@ module.exports = {
       blck: '#1A1A1A',
       gry: '#999999',
       drkgry: '#636363',
+      outline: '#3F3F3F',
     },
   },
   plugins: [],

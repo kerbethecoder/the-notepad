@@ -18,7 +18,7 @@ export default function Nav() {
 
   return (
     <nav className="flex justify-center items-center m-5 gap-10">
-      <div className="flex gap-5 pt-2 h-fit">
+      <div className="w-1/3 h-fit flex justify-end gap-5">
         <Link
           href="/js-snippets"
           className={
@@ -47,16 +47,14 @@ export default function Nav() {
           Color Palettes
         </Link>
       </div>
-      <div>
-        <Image
-          src="/devlogo.png"
-          width={50}
-          height={50}
-          alt="developer logo"
-          className="cursor-pointer"
-        />
-      </div>
-      <div className="flex gap-5 pt-2 h-fit">
+      <Image
+        src="/devlogo.png"
+        width={50}
+        height={50}
+        alt="developer logo"
+        className="cursor-pointer"
+      />
+      <div className="w-1/3 h-fit flex gap-5">
         <Link
           href="/"
           className={
