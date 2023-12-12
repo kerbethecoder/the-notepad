@@ -20,7 +20,7 @@ export default function Footer() {
           </p>
           <div className={`${styles.flexCenter} gap-3 mt-10`}>
             <a
-              href="https://kerbethecoder.netlify.app/"
+              href="https://kerbethecoder.com"
               target="_blank"
               rel="noopener noreferrer">
               <button
@@ -69,7 +69,7 @@ export default function Footer() {
             <br />
             guide. If you want to know more about the developer, check out his
             <br />
-            socials and portfolio on the left. Happy Coding!”
+            socials and portfolio. Happy Coding!”
           </p>
           <p className="text-gry text-xs font-bold">© 2023. Kerby Cantos</p>
         </div>

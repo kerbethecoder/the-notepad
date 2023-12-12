@@ -8,19 +8,11 @@ export default function QuickStarts() {
     <main className="mx-72">
       <p className="text-center mt-12 text-sm">
         This section is limited to the “quick-starts” or starter guides for
-        different
-        <br />
-        technologies the developer is using for front-end web development. If
-        you
-        <br />
-        want further information, check out the official documentations of what
-        you
-        <br />
-        are trying to pursue. There are also tons of guide out there in the
-        internet, this
-        <br />
-        page is only to help the developer and fellow developers if the need
-        arises.
+        different <br /> technologies that the developer is using for front-end
+        web development. If you <br /> want further information, check out the
+        official documentations of what you <br /> are trying to pursue. There
+        are also tons of guide out there in the internet, this <br /> page is
+        only to help the developer and fellow developers if the need arises.
       </p>
 
       <div className={`${styles.flexCenter} my-12`}>
@@ -35,16 +27,14 @@ export default function QuickStarts() {
         <div className="pl-24">
           <p>
             Creating a gatsby app using the cli is, for me, the best or ideal
-            way of starting. I tried 2 other method which is
-            <br />
-            the start from scratch and an unofficial way of starting which I
-            made on my own based on my experiences on coding.
+            way of starting. I tried 2 other method which is <br /> the start
+            from scratch and an unofficial way of starting which I made on my
+            own based on my experiences on coding.
           </p>
           <p className="my-5">
             The first option is to create the gatsby project by initializing
-            gatsby and then building your way up without any
-            <br />
-            packages or plugins beside gatsby itself, it&#39;s in the{' '}
+            gatsby and then building your way up without any <br /> packages or
+            plugins beside gatsby itself, it&#39;s in the{' '}
             <a
               href="https://www.gatsbyjs.com/docs/quick-start/"
               target="_blank"
@@ -58,13 +48,10 @@ export default function QuickStarts() {
           </p>
           <p>
             The second option which is the unofficial one is to clone a forked
-            gatsby github repo into your machine and
-            <br />
-            from there build your way up, however, it has too many unnecessary
-            things included such as the git logs from
-            <br />
-            the previous contributors are present here, so, I immediately stop
-            from using that kind of method.
+            gatsby github repo into your machine and <br /> from there build
+            your way up, however, it has too many unnecessary things included
+            such as the git logs from <br /> the previous contributors are
+            present here, so, I immediately stop from using that kind of method.
           </p>
 
           <div id="gatsbycli" className="mt-10">

@@ -7,4 +7,7 @@ export const styles = {
 
   flexCenter: 'flex justify-center items-center',
   flexBetween: 'flex justify-between items-center',
+
+  projectCard:
+    'outline-drkgry outline outline-2 rounded-md p-5 transition duration-300 ease-in-out hover:scale-105',
 };
