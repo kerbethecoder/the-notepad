@@ -31,9 +31,19 @@ export default function Developer() {
 
   const oldProjects = {
     projectOne: {
-      title: 'FAN PAGE',
+      title: 'SNAKE GAME',
       color: 'text-rd',
       bg: 'bg-rd',
+      githubUrl: 'https://github.com/kerbethecoder/snake-js',
+      siteUrl: 'https://kerbethecoder.github.io/snake-js/',
+      description:
+        'Another personal project to hone my skills in web development. A nostalgic throwback to the old-school entertainment, where players control a snake moving around the screen, eating food, and growing longer with each meal.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+    },
+    projectTwo: {
+      title: 'FAN PAGE',
+      color: 'text-blgrn',
+      bg: 'bg-blgrn',
       githubUrl: 'https://github.com/kerbethecoder/theweekndfanpage',
       siteUrl: 'https://kerbethecoder.github.io/theweekndfanpage/',
       description:
@@ -41,10 +51,10 @@ export default function Developer() {
       technologies: ['HTML', 'CSS'],
     },
 
-    projectTwo: {
+    projectThree: {
       title: 'DOCUMENTATION PAGE',
-      color: 'text-blgrn',
-      bg: 'bg-blgrn',
+      color: 'text-cyn',
+      bg: 'bg-cyn',
       githubUrl: 'https://github.com/kerbethecoder/techdocumentationpage',
       siteUrl: 'https://kerbethecoder.github.io/techdocumentationpage/',
       description:
@@ -52,7 +62,18 @@ export default function Developer() {
       technologies: ['HTML', 'CSS'],
     },
 
-    projectThree: {
+    projectFour: {
+      title: 'WHEELS TRADE CENTER',
+      color: 'text-rd',
+      bg: 'bg-rd',
+      githubUrl: 'https://github.com/kerbethecoder/wheels-trade-center',
+      siteUrl: 'https://kerbethecoder.github.io/wheels-trade-center/',
+      description:
+        'As part of TheOdinProject course, this is a sample landing page for a car company that will further enhance my front-end web development skills.',
+      technologies: ['HTML', 'CSS'],
+    },
+
+    projectFive: {
       title: 'LANDING PAGE',
       color: 'text-yllw',
       bg: 'bg-yllw',
@@ -77,7 +98,7 @@ export default function Developer() {
         </div>
         <div className="w-4/12 pl-10">
           <h1 className={`${viga.className} text-4xl`}>Meet the Developer!</h1>
-          <p className="">
+          <p>
             <strong>@kerbethecoder</strong>, the man behind this small website.
             The idea started when the developer finds it hard to check from time
             to time for his notes or in the internet regarding different matters
@@ -86,6 +107,16 @@ export default function Developer() {
           </p>
           <p className="mt-10 text-sm font-bold">
             To know more about him, check the links in the footer. ^^
+          </p>
+          <p className="text-sm font-bold">
+            or through my email:{' '}
+            <a
+              href="mailto:krbycnts@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-rd">
+              krby.cnts@gmail.com
+            </a>
           </p>
         </div>
       </div>
