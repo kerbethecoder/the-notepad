@@ -40,7 +40,19 @@ export default function Developer() {
         'Another personal project to hone my skills in web development. A nostalgic throwback to the old-school entertainment, where players control a snake moving around the screen, eating food, and growing longer with each meal.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
     },
+
     projectTwo: {
+      title: 'RECIPE SITE',
+      color: 'text-yllw',
+      bg: 'bg-yllw',
+      githubUrl: 'https://github.com/kerbethecoder/recipes',
+      siteUrl: 'https://kerbethecoder.github.io/recipes/',
+      description:
+        "A FreeCodeCamp.org course project from 2022 that will allow me to demonstrate and hone my HTML/CSS abilities. I am to create a 'Tribute Page' for someone or something.",
+      technologies: ['HTML', 'CSS'],
+    },
+
+    projectThree: {
       title: 'FAN PAGE',
       color: 'text-blgrn',
       bg: 'bg-blgrn',
@@ -51,7 +63,7 @@ export default function Developer() {
       technologies: ['HTML', 'CSS'],
     },
 
-    projectThree: {
+    projectFour: {
       title: 'DOCUMENTATION PAGE',
       color: 'text-cyn',
       bg: 'bg-cyn',
@@ -62,7 +74,7 @@ export default function Developer() {
       technologies: ['HTML', 'CSS'],
     },
 
-    projectFour: {
+    projectFive: {
       title: 'WHEELS TRADE CENTER',
       color: 'text-rd',
       bg: 'bg-rd',
@@ -73,7 +85,7 @@ export default function Developer() {
       technologies: ['HTML', 'CSS'],
     },
 
-    projectFive: {
+    projectSix: {
       title: 'LANDING PAGE',
       color: 'text-yllw',
       bg: 'bg-yllw',
