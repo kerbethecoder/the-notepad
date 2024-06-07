@@ -13,6 +13,65 @@
 - NextJS
 - Tailwind CSS
 
+## How to Run
+
+- Check if `nvm`, `npm`, and `node` or whatever you're using is updated or installed.
+
+  - updating/installing _nvm_
+
+  ```
+  # to install
+  $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+
+  # source the nvm script depending on which shell your using
+  $ source ~/.bashrc
+
+  # to check version
+  $ nvm -v
+  ```
+
+  - updating/installing _node_
+
+  ```
+  # to install/update node
+  $ nvm install --lts
+
+  # to check version/installed
+  $ nvm -v
+  ```
+
+  - updating/installng _npm_
+
+  ```
+  # to update/install npm
+  $ npm install -g npm@latest
+
+  # to check version
+  $ npm -v
+  ```
+
+- Clone the project into your local machine.
+
+  ```
+  # if cloning to a premade directory
+  $ git clone thisisyourpath@github.com .
+
+  # otherwise
+  $ git clone thisisyourpath@github.com newfolder/
+  ```
+
+  - Install packages.
+
+  ```
+  $ npm i
+  ```
+
+  - Run the project.
+
+  ```
+  $ npm run dev
+  ```
+
 ## Pages Overview
 
 - Homepage
