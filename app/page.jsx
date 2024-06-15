@@ -141,10 +141,10 @@ export default function Home() {
           height={340}
         />
         <h3 className={`${viga.className} text-lg mt-10 mb-5`}>
-          FRONT-END QUICK START
+          FRONT-END BLUEPRINTS
         </h3>
         <p className="text-center">
-          Explore the developer&#39;s quick start page for front-end
+          Explore the developer&#39;s quick-start page for front-end
           development, offering a treasure trove of resources for various <br />{' '}
           technologies such as React, Gatsby, Vue.js, and more. Dive into
           step-by-step guides and code examples to kickstart your <br /> project
@@ -153,7 +153,7 @@ export default function Home() {
           create stunning, responsive, and feature-rich web applications with
           ease.
         </p>
-        <Link href="/quick-starts" className="mt-10">
+        <Link href="/blueprints" className="mt-10">
           <Button
             title="Check it out"
             hex="bgRed"

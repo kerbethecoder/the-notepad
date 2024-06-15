@@ -27,6 +27,10 @@ body {
   box-shadow: 2px 2px 0px 0px #111010;
 }
 
+.box-shdw {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .strk-outline {
   -webkit-text-stroke: 2px var(--black);
 }
@@ -35,5 +39,6 @@ body {
   background-color: var(--dimBlack);
   padding: 15px;
   border-radius: 5px;
-  overflow-x: auto;
+  white-space: pre-wrap;
+  /* max-width: 100%; */
 }
