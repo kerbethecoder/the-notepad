@@ -112,10 +112,10 @@ export default function Developer() {
           <h1 className={`${viga.className} text-4xl`}>Meet the Developer!</h1>
           <p>
             <strong>@kerbethecoder</strong>, the man behind this small website.
-            The idea started when the developer finds it hard to check from time
-            to time for his notes or in the internet regarding different matters
-            such as searching for color palettes or font pairings, or even for
-            quick-starts whenever he decides to start on a new project.
+            The idea started when the developer finds it hassle to check from
+            time to time in his notes or in the internet regarding different
+            matters such as searching for color palettes or font pairings, or
+            even for quick-starts whenever he decides to start on a new project.
           </p>
           <p className="mt-10 text-sm font-bold">
             To know more about him, check the links in the footer. ^^

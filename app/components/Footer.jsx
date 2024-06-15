@@ -99,7 +99,7 @@ export default function Footer() {
           className="font-bold underline underline-offset-2 hover:text-rd">
           Tailwind CSS
         </a>
-        .
+        . This is still on Desktop/Laptop Version ^^.
       </p>
     </footer>
   );

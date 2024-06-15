@@ -78,8 +78,8 @@
   - Introduction to "The NotePad" and brief descriptions of available pages.
 - Developer Page
   - Details about the developer and showcased projects.
-- Front-End Quick Starts
-  - Steps to start projects using different front-end technologies (e.g. React, Gatsby, NextJS).
+- Front-End Blueprints
+  - Steps to start projects using different technologies (e.g. React, Gatsby, NextJS).
 - Font Pairings
   - Display various font pairings suitable for different use cases.
 - Color Palettes

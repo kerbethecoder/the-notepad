@@ -65,13 +65,13 @@ export default function Nav() {
           TheNotePad
         </Link>
         <Link
-          href="/quick-starts"
+          href="/blueprints"
           className={
-            isActive('/quick-starts')
+            isActive('/blueprints')
               ? 'font-bold underline underline-offset-4 decoration-2'
               : styles.transitionA
           }>
-          Front-End Quick Start
+          Front-End Blueprints
         </Link>
         <Link
           href="/developer"
