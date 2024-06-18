@@ -156,7 +156,7 @@ export default function Home() {
         <Link href="/blueprints" className="mt-10">
           <Button
             title="Check it out"
-            hex="bgRed"
+            hex="bgBeige"
             icon={<FaArrowRightLong />}
           />
         </Link>
