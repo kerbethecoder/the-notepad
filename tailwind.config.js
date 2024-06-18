@@ -19,6 +19,7 @@ module.exports = {
       rd: '#E76F51',
       cyn: '#CBF3F0',
       blgrn: '#2EC4B6',
+      bge: '#F7EDE2',
       blck: '#1A1A1A',
       gry: '#999999',
       drkgry: '#636363',
