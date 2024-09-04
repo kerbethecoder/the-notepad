@@ -1,3 +1,18 @@
+<!--
+TO REMEMBER:
+ES Lint extension: works only if there is a eslint configuration in your project, so it provides the
+connection between vscode (developer's IDE) and your project. Without the extension, you would have to
+manually run 'eslint' from the command line to check for errors.
+
+Prettier extension: while it is a universal or global formatting tool for you whenever you code, having
+both the prettier configuration and prettier extension gives you the benefit of custom project-limited
+configuration and auto format on save. Without the extension, i think it won't automatically format your code.
+
+So in conclusion: the .prettierrc, and .eslintrc are configurations for your project so that all of the
+developers have the generic or generally accepted/set configuration throughout the whole CI/CD pipeline.
+Both extensions will automatically read your configurations and run with those.
+ -->
+
 # The NotePad. 📔
 
 ![Static Badge](https://img.shields.io/badge/success-green?logo=Vercel&label=vercel&labelColor=%231A1A1A)
@@ -87,9 +102,78 @@
 - JavaScript Snippets
   - Collection of JavaScript-related questions and solutions for common scenarios.
 
-## Contact
+---
 
-If you'd like to connect with me or have any questions about my projects or notes, feel free to reach out. You can find my contact information on this page, along with links to my social media profiles and GitHub repository.
+## Linting/Formatting ✨
+
+> [!NOTE]
+>
+> When you run 'next lint', you'd be automatically lead to installing `eslint` and `eslint-config-next`.
+> Packages:
+
+- `eslint` <small>[source](https://eslint.org/)</small>
+- `eslint-config-next` <small>[source](https://nextjs.org/docs/pages/building-your-application/configuring/eslint)</small>
+- `eslint-config-prettier` <small>[source](https://github.com/prettier/eslint-config-prettier)</small>
+- `prettier` <small>[source](https://prettier.io/docs/en/install.html)</small>
+- `prettier-plugin-tailwindcss` <small>[source](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)</small>
+
+**Installation:**
+
+1. Run commands depending on your `package.json`.
+
+```bash
+# terminal
+npm run lint
+
+next lint
+```
+
+> - Basically it's the same, it just depends on what command and package manager you want to run.
+> - This will also create a new legacy file `.eslintrc.json` and add configurations depending on what you have chosen on the prompt ([reference](https://nextjs.org/docs/pages/building-your-application/configuring/eslint)).
+> - It will also depend on you if you want to use the legacy version or the new version for your eslint configuration file. Eslint website says that legacy is already deprecated. ([new](https://eslint.org/docs/latest/use/configure/configuration-files)) ([legacy](https://eslint.org/docs/latest/use/configure/configuration-files-deprecated))
+
+2. Install `prettier` and `prettier-plugin-tailwindcss`.
+
+```bash
+# terminal
+npm i -D prettier prettier-plugin-tailwindcss
+```
+
+> [!NOTE]
+>
+> `-D` is shorthand for `--save-dev`.
+
+3. Create `.prettierrc.json` file and add your configurations.
+
+**Sample:**
+
+```json
+{
+  "singleQuote": true,
+  "printWidth": 80,
+  "tabWidth": 2,
+  "semi": true,
+  "trailingComma": "es5",
+  "plugins": ["prettier-plugin-tailwindcss"]
+}
+```
+
+4. Install `eslint-config-prettier` and update `.eslintrc.json` configurations.
+
+```json
+{
+  "extends": ["next/core-web-vitals", "prettier"]
+}
+```
+
+> [!NOTE]
+>
+> This may depend on what you have chosen in the first prompt. ([reference](https://nextjs.org/docs/pages/building-your-application/configuring/eslint))
+
+This will make `eslint` solely focus on code quality, and `prettier` to handle all formatting.
+
+> [!TIP]
+> It depends on you if you want to add `eslint-plugin-prettier` to add prettier formatting as an eslint rule or not.
 
 🚀 [kerbethecoder](https://github.com/kerbethecoder)  
 📫 krby.cnts@gmail.com  
