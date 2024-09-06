@@ -7,7 +7,8 @@ export default function Button({ title, hex, icon }) {
 
   return (
     <button
-      className={`${viga.className} ${bgColor} ${styles.flexCenter} gap-2 custom-btn w-56 h-14 transition duration-300 ease-in-out hover:scale-105`}>
+      className={`${viga.className} ${bgColor} ${styles.flexCenter} custom-btn h-14 w-56 gap-2 transition duration-300 hover:scale-105`}
+    >
       {title} {icon}
     </button>
   );

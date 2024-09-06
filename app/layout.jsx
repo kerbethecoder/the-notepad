@@ -11,9 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${oxygen.className}`}>
+      <body className={`${oxygen.className} flex min-h-screen flex-col`}>
         <Nav />
-        <main className="app">{children}</main>
+        <main className="app flex-grow">{children}</main>
         <Footer />
       </body>
     </html>
