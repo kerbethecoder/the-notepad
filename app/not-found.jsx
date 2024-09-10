@@ -6,10 +6,10 @@ import { Button } from '@/ui/index';
 export default function NotFound() {
   return (
     <>
-      <h1 className={`${inter.className} text-7xl font-bold mt-48 text-center`}>
+      <h1 className={`${inter.className} mt-20 text-center text-7xl font-bold`}>
         404 - Page Not Found
       </h1>
-      <Link href="/" className="flex justify-center items-center mt-5 mb-40">
+      <Link href="/" className="mt-10 flex items-center justify-center">
         <Button title={`Let's go back! ^^`} hex="bgYellow" />
       </Link>
     </>

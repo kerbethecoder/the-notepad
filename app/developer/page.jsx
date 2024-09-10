@@ -126,7 +126,8 @@ export default function Developer() {
               href="mailto:krbycnts@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline hover:text-rd">
+              className="underline hover:text-rd"
+            >
               krby.cnts@gmail.com
             </a>
           </p>
@@ -144,20 +145,22 @@ export default function Developer() {
           width={450}
           height={100}
         />
-        <p className="py-10 text-center w-4/12">
+        <p className="w-4/12 py-10 text-center">
           This section is dedicated to the developer&#39;s sample projects as
           well as the websites he worked on throughout his web developer
           journey. Hope you like it!
         </p>
 
-        <div className={`flex justify-evenly flex-wrap gap-5 w-6/12 px-20`}>
+        <div className={`flex w-6/12 flex-wrap justify-evenly gap-5 px-20`}>
           {Object.keys(newProjects).map((proj, i) => (
             <div
-              className={`w-5/12 h-56 flex justify-between flex-col ${styles.projectCard}`}
-              key={i}>
+              className={`flex h-56 w-5/12 flex-col justify-between ${styles.projectCard}`}
+              key={i}
+            >
               <div id="links" className={`${styles.flexBetween} h-1/6`}>
                 <span
-                  className={`${viga.className} ${newProjects[proj].color} text-3xl strk-outline`}>
+                  className={`${viga.className} ${newProjects[proj].color} strk-outline text-3xl`}
+                >
                   {newProjects[proj].num}
                 </span>
                 <div className="flex gap-3">
@@ -165,14 +168,16 @@ export default function Developer() {
                     href={newProjects[proj].githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="transition duration-300 ease-in-out hover:scale-125">
+                    className="transition duration-300 ease-in-out hover:scale-125"
+                  >
                     <FaGithub size="1.7em" />
                   </a>
                   <a
                     href={newProjects[proj].siteUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="transition duration-300 ease-in-out hover:scale-125">
+                    className="transition duration-300 ease-in-out hover:scale-125"
+                  >
                     <FaArrowUpRightFromSquare size="1.7em" />
                   </a>
                 </div>
@@ -185,11 +190,12 @@ export default function Developer() {
                 <p className="text-sm">{newProjects[proj].description}</p>
               </div>
 
-              <div id="technologies" className="h-1/6 flex items-end gap-1">
+              <div id="technologies" className="flex h-1/6 items-end gap-1">
                 {newProjects[proj].technologies.map((tech, i) => (
                   <span
-                    className={`${inter.className} text-xs text-whte font-bold py-1 px-2 bg-blck rounded h-fit`}
-                    key={i}>
+                    className={`${inter.className} h-fit rounded bg-blck px-2 py-1 text-xs font-bold text-whte`}
+                    key={i}
+                  >
                     {tech}
                   </span>
                 ))}
@@ -202,18 +208,21 @@ export default function Developer() {
           <Image src="/hr.svg" alt="horizontal rule" width={1100} height={1} />
         </div>
 
-        <p className={`${inter.className} font-bold text-xl mb-5`}>
-          Old Projects <span className="text-sm">(it's not pretty XD)</span>
+        <p className={`${inter.className} mb-5 text-xl font-bold`}>
+          Old Projects{' '}
+          <span className="text-sm">(it&apos;s not pretty XD)</span>
         </p>
 
-        <div className={`flex justify-evenly flex-wrap gap-5 w-7/12 px-20`}>
+        <div className={`flex w-7/12 flex-wrap justify-evenly gap-5 px-20`}>
           {Object.keys(oldProjects).map((proj, i) => (
             <div
-              className={`w-5/12 h-56 flex justify-between flex-col bg-[#323232] p-5 rounded-md transition duration-300 ease-in-out hover:scale-105`}
-              key={i}>
+              className={`flex h-56 w-5/12 flex-col justify-between rounded-md bg-[#323232] p-5 transition duration-300 ease-in-out hover:scale-105`}
+              key={i}
+            >
               <div id="links" className={`${styles.flexBetween} h-1/6`}>
                 <h3
-                  className={`${inter.className} ${oldProjects[proj].color} font-bold`}>
+                  className={`${inter.className} ${oldProjects[proj].color} font-bold`}
+                >
                   {oldProjects[proj].title}
                 </h3>
                 <div className="flex gap-3">
@@ -221,14 +230,16 @@ export default function Developer() {
                     href={oldProjects[proj].githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="transition duration-300 ease-in-out hover:scale-125">
+                    className="transition duration-300 ease-in-out hover:scale-125"
+                  >
                     <FaGithub size="1.7em" color="white" />
                   </a>
                   <a
                     href={oldProjects[proj].siteUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="transition duration-300 ease-in-out hover:scale-125">
+                    className="transition duration-300 ease-in-out hover:scale-125"
+                  >
                     <FaArrowUpRightFromSquare size="1.7em" color="white" />
                   </a>
                 </div>
@@ -240,11 +251,12 @@ export default function Developer() {
                 </p>
               </div>
 
-              <div id="technologies" className="h-1/6 flex items-end gap-1">
+              <div id="technologies" className="flex h-1/6 items-end gap-1">
                 {oldProjects[proj].technologies.map((tech, i) => (
                   <span
-                    className={`${inter.className} text-xs font-bold py-1 px-2 ${oldProjects[proj].bg} rounded h-fit`}
-                    key={i}>
+                    className={`${inter.className} px-2 py-1 text-xs font-bold ${oldProjects[proj].bg} h-fit rounded`}
+                    key={i}
+                  >
                     {tech}
                   </span>
                 ))}
