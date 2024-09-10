@@ -30,7 +30,7 @@ export const inter = Inter({
   display: 'swap',
 });
 
-export const inter_tight = Inter_Tight({
+export const interTight = Inter_Tight({
   weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap',
@@ -49,31 +49,31 @@ export const cardo = Cardo({
   display: 'swap',
 });
 
-export const playfair = Playfair_Display({
+export const playfairDisplay = Playfair_Display({
   weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap',
 });
 
-export const sourSans = Source_Sans_3({
+export const sourceSans = Source_Sans_3({
   weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap',
 });
 
-export const quattro = Quattrocento({
+export const quattrocento = Quattrocento({
   weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap',
 });
 
-export const bebas = Bebas_Neue({
+export const bebasNeue = Bebas_Neue({
   weight: ['400'],
   subsets: ['latin'],
   display: 'swap',
 });
 
-export const ubuntu = Ubuntu_Condensed({
+export const ubuntuCondensed = Ubuntu_Condensed({
   weight: ['400'],
   subsets: ['latin'],
   display: 'swap',

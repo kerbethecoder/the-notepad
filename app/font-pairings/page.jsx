@@ -3,14 +3,14 @@ import Image from 'next/image';
 import {
   viga,
   oxygen,
-  inter_tight,
+  interTight,
   cardo,
   oswald,
-  bebas,
-  playfair,
-  quattro,
-  sourSans,
-  ubuntu,
+  bebasNeue,
+  playfairDisplay,
+  quattrocento,
+  sourceSans,
+  ubuntuCondensed,
 } from '@/ui/fonts';
 import { styles } from '@/ui/style';
 
@@ -20,19 +20,21 @@ export default function FontPairings() {
       <div id="pair-1" className="flex flex-col gap-5">
         <div className="flex gap-20">
           <span
-            className={`${inter_tight.className} italic flex justify-end items-end text-rd font-bold w-4/12`}>
+            className={`${interTight.className} flex w-4/12 items-end justify-end font-bold italic text-rd`}
+          >
             Oswald
           </span>
-          <h2 className={`${oswald.className} w-6/12 font-bold text-5xl`}>
+          <h2 className={`${oswald.className} w-6/12 text-5xl font-bold`}>
             Heading Font
           </h2>
         </div>
         <div className="flex gap-20">
           <span
-            className={`${inter_tight.className} italic flex justify-end text-blgrn font-bold w-4/12`}>
+            className={`${interTight.className} flex w-4/12 justify-end font-bold italic text-blgrn`}
+          >
             Cardo
           </span>
-          <p className={`${cardo.className} text-lg w-4/12`}>
+          <p className={`${cardo.className} w-4/12 text-lg`}>
             This is how the body would look like using{' '}
             <span className="font-bold underline">Cardo</span> font. Lorem ipsum
             dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -50,19 +52,21 @@ export default function FontPairings() {
       <div id="pair-2" className="flex flex-col gap-5">
         <div className="flex gap-20">
           <span
-            className={`${inter_tight.className} italic flex justify-end items-end text-rd font-bold w-4/12`}>
+            className={`${interTight.className} flex w-4/12 items-end justify-end font-bold italic text-rd`}
+          >
             Viga
           </span>
-          <h2 className={`${viga.className} w-6/12 font-bold text-5xl`}>
+          <h2 className={`${viga.className} w-6/12 text-5xl font-bold`}>
             Heading Font
           </h2>
         </div>
         <div className="flex gap-20">
           <span
-            className={`${inter_tight.className} italic flex justify-end text-blgrn font-bold w-4/12`}>
+            className={`${interTight.className} flex w-4/12 justify-end font-bold italic text-blgrn`}
+          >
             Oxygen
           </span>
-          <p className={`${oxygen.className} text-lg w-4/12`}>
+          <p className={`${oxygen.className} w-4/12 text-lg`}>
             This is how the body would look like using{' '}
             <span className="font-bold underline">Oxygen</span> font. Lorem
             ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -80,19 +84,23 @@ export default function FontPairings() {
       <div id="pair-3" className="flex flex-col gap-5">
         <div className="flex gap-20">
           <span
-            className={`${inter_tight.className} italic flex justify-end items-end text-rd font-bold w-4/12`}>
+            className={`${interTight.className} flex w-4/12 items-end justify-end font-bold italic text-rd`}
+          >
             Playfair Display
           </span>
-          <h2 className={`${playfair.className} w-6/12 font-bold text-5xl`}>
+          <h2
+            className={`${playfairDisplay.className} w-6/12 text-5xl font-bold`}
+          >
             Heading Font
           </h2>
         </div>
         <div className="flex gap-20">
           <span
-            className={`${inter_tight.className} italic flex justify-end text-blgrn font-bold w-4/12`}>
+            className={`${interTight.className} flex w-4/12 justify-end font-bold italic text-blgrn`}
+          >
             Source Sans 3
           </span>
-          <p className={`${sourSans.className} text-lg w-4/12`}>
+          <p className={`${sourceSans.className} w-4/12 text-lg`}>
             This is how the body would look like using{' '}
             <span className="font-bold underline">Source Sans 3</span> font.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -110,19 +118,21 @@ export default function FontPairings() {
       <div id="pair-4" className="flex flex-col gap-5">
         <div className="flex gap-20">
           <span
-            className={`${inter_tight.className} italic flex justify-end items-end text-rd font-bold w-4/12`}>
+            className={`${interTight.className} flex w-4/12 items-end justify-end font-bold italic text-rd`}
+          >
             Oswald
           </span>
-          <h2 className={`${oswald.className} w-6/12 font-bold text-5xl`}>
+          <h2 className={`${oswald.className} w-6/12 text-5xl font-bold`}>
             Heading Font
           </h2>
         </div>
         <div className="flex gap-20">
           <span
-            className={`${inter_tight.className} italic flex justify-end text-blgrn font-bold w-4/12`}>
+            className={`${interTight.className} flex w-4/12 justify-end font-bold italic text-blgrn`}
+          >
             Quattrocento
           </span>
-          <p className={`${quattro.className} text-lg w-4/12`}>
+          <p className={`${quattrocento.className} w-4/12 text-lg`}>
             This is how the body would look like using{' '}
             <span className="font-bold underline">Quattrocento</span> font.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -140,19 +150,21 @@ export default function FontPairings() {
       <div id="pair-5" className="flex flex-col gap-5">
         <div className="flex gap-20">
           <span
-            className={`${inter_tight.className} italic flex justify-end items-end text-rd font-bold w-4/12`}>
+            className={`${interTight.className} flex w-4/12 items-end justify-end font-bold italic text-rd`}
+          >
             Bebas Neue
           </span>
-          <h2 className={`${bebas.className} w-6/12 font-bold text-5xl`}>
+          <h2 className={`${bebasNeue.className} w-6/12 text-5xl font-bold`}>
             Heading Font
           </h2>
         </div>
         <div className="flex gap-20">
           <span
-            className={`${inter_tight.className} italic flex justify-end text-blgrn font-bold w-4/12`}>
+            className={`${interTight.className} flex w-4/12 justify-end font-bold italic text-blgrn`}
+          >
             Ubuntu Condensed
           </span>
-          <p className={`${ubuntu.className} text-lg w-4/12`}>
+          <p className={`${ubuntuCondensed.className} w-4/12 text-lg`}>
             This is how the body would look like using{' '}
             <span className="font-bold underline">Ubuntu Condensed</span> font.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -167,7 +179,7 @@ export default function FontPairings() {
         <Image src="/hr.svg" alt="horizontal rule" width={1100} height={1} />
       </div>
 
-      <h2 className={`${viga.className} text-center font-bold text-xl`}>
+      <h2 className={`${viga.className} text-center text-xl font-bold`}>
         MORE FONT PAIRINGS TO COME. ^^
       </h2>
     </main>
