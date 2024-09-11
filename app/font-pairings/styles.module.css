@@ -1,0 +1,35 @@
+.custom__grid {
+  --line-offset: calc(var(--gap) / 2);
+  --line-thickness: 2px;
+  --line-color: red;
+  --gap: 2rem;
+
+  gap: var(--gap);
+  @apply grid grid-cols-3 overflow-hidden;
+}
+
+.grid__item {
+  position: relative;
+}
+
+.grid__item::before,
+.grid__item::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+
+  @apply bg-[#d9d9d9];
+}
+
+.grid__item::after {
+  inline-size: 100vw;
+  block-size: var(--line-thickness);
+  inset-inline-start: 0;
+  inset-block-start: calc(var(--line-offset) * -1);
+}
+
+.grid__item::before {
+  inline-size: var(--line-thickness);
+  block-size: 100vh;
+  inset-inline-start: calc(var(--line-offset) * -1);
+}

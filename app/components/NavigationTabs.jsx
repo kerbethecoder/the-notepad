@@ -3,7 +3,7 @@
 import React from 'react';
 import { Frontend, GitCmds } from '@/components/index';
 
-export default function NavigableTabs() {
+export default function NavigationTabs() {
   const [activeTab, setActiveTab] = React.useState('Tab1');
   const handleTabChange = (newTab) => setActiveTab(newTab);
 

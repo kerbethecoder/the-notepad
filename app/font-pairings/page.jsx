@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import styles from './styles.module.css';
 
 import {
   viga,
@@ -12,176 +12,83 @@ import {
   sourceSans,
   ubuntuCondensed,
 } from '@/ui/fonts';
-import { styles } from '@/ui/style';
+
+const fontPairings = [
+  {
+    id: 1,
+    headingFont: 'Oswald',
+    headingClassName: oswald.className,
+    bodyFont: 'Cardo',
+    bodyClassName: cardo.className,
+  },
+  {
+    id: 2,
+    headingFont: 'Viga',
+    headingClassName: viga.className,
+    bodyFont: 'Oxygen',
+    bodyClassName: oxygen.className,
+  },
+  {
+    id: 3,
+    headingFont: 'Playfair Display',
+    headingClassName: playfairDisplay.className,
+    bodyFont: 'Source Sans 3',
+    bodyClassName: sourceSans.className,
+  },
+  {
+    id: 4,
+    headingFont: 'Oswald',
+    headingClassName: oswald.className,
+    bodyFont: 'Quattrocento',
+    bodyClassName: quattrocento.className,
+  },
+  {
+    id: 5,
+    headingFont: 'Bebas Neue',
+    headingClassName: bebasNeue.className,
+    bodyFont: 'Ubuntu Condensed',
+    bodyClassName: ubuntuCondensed.className,
+  },
+];
 
 export default function FontPairings() {
   return (
-    <main className="my-32">
-      <div id="pair-1" className="flex flex-col gap-5">
-        <div className="flex gap-20">
-          <span
-            className={`${interTight.className} flex w-4/12 items-end justify-end font-bold italic text-rd`}
+    <section className="mx-14 my-40">
+      <div className={styles.custom__grid}>
+        {fontPairings.map((fontPair) => (
+          <div
+            key={fontPair.id}
+            className={`${styles.grid__item} space-y-2 p-10`}
           >
-            Oswald
-          </span>
-          <h2 className={`${oswald.className} w-6/12 text-5xl font-bold`}>
-            Heading Font
-          </h2>
-        </div>
-        <div className="flex gap-20">
-          <span
-            className={`${interTight.className} flex w-4/12 justify-end font-bold italic text-blgrn`}
-          >
-            Cardo
-          </span>
-          <p className={`${cardo.className} w-4/12 text-lg`}>
-            This is how the body would look like using{' '}
-            <span className="font-bold underline">Cardo</span> font. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
-          </p>
-        </div>
+            <div className="flex items-end gap-5">
+              <span
+                className={`${interTight.className} w-1/5 text-right text-sm font-bold italic text-rd`}
+              >
+                {fontPair.headingFont}
+              </span>
+              <h3
+                className={`${fontPair.headingClassName} w-4/5 text-3xl font-bold`}
+              >
+                This is a Heading
+              </h3>
+            </div>
+            <div className="flex gap-5">
+              <span
+                className={`${interTight.className} w-1/5 text-right text-sm font-bold italic text-blgrn`}
+              >
+                {fontPair.bodyFont}
+              </span>
+              <p className={`${fontPair.bodyClassName} w-4/5`}>
+                This is how the body would look like using{' '}
+                <span className="font-bold underline">{fontPair.bodyFont}</span>{' '}
+                font. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
-
-      <div className={`${styles.flexCenter} my-32`}>
-        <Image src="/hr.svg" alt="horizontal rule" width={1100} height={1} />
-      </div>
-
-      <div id="pair-2" className="flex flex-col gap-5">
-        <div className="flex gap-20">
-          <span
-            className={`${interTight.className} flex w-4/12 items-end justify-end font-bold italic text-rd`}
-          >
-            Viga
-          </span>
-          <h2 className={`${viga.className} w-6/12 text-5xl font-bold`}>
-            Heading Font
-          </h2>
-        </div>
-        <div className="flex gap-20">
-          <span
-            className={`${interTight.className} flex w-4/12 justify-end font-bold italic text-blgrn`}
-          >
-            Oxygen
-          </span>
-          <p className={`${oxygen.className} w-4/12 text-lg`}>
-            This is how the body would look like using{' '}
-            <span className="font-bold underline">Oxygen</span> font. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
-          </p>
-        </div>
-      </div>
-
-      <div className={`${styles.flexCenter} my-32`}>
-        <Image src="/hr.svg" alt="horizontal rule" width={1100} height={1} />
-      </div>
-
-      <div id="pair-3" className="flex flex-col gap-5">
-        <div className="flex gap-20">
-          <span
-            className={`${interTight.className} flex w-4/12 items-end justify-end font-bold italic text-rd`}
-          >
-            Playfair Display
-          </span>
-          <h2
-            className={`${playfairDisplay.className} w-6/12 text-5xl font-bold`}
-          >
-            Heading Font
-          </h2>
-        </div>
-        <div className="flex gap-20">
-          <span
-            className={`${interTight.className} flex w-4/12 justify-end font-bold italic text-blgrn`}
-          >
-            Source Sans 3
-          </span>
-          <p className={`${sourceSans.className} w-4/12 text-lg`}>
-            This is how the body would look like using{' '}
-            <span className="font-bold underline">Source Sans 3</span> font.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-
-      <div className={`${styles.flexCenter} my-32`}>
-        <Image src="/hr.svg" alt="horizontal rule" width={1100} height={1} />
-      </div>
-
-      <div id="pair-4" className="flex flex-col gap-5">
-        <div className="flex gap-20">
-          <span
-            className={`${interTight.className} flex w-4/12 items-end justify-end font-bold italic text-rd`}
-          >
-            Oswald
-          </span>
-          <h2 className={`${oswald.className} w-6/12 text-5xl font-bold`}>
-            Heading Font
-          </h2>
-        </div>
-        <div className="flex gap-20">
-          <span
-            className={`${interTight.className} flex w-4/12 justify-end font-bold italic text-blgrn`}
-          >
-            Quattrocento
-          </span>
-          <p className={`${quattrocento.className} w-4/12 text-lg`}>
-            This is how the body would look like using{' '}
-            <span className="font-bold underline">Quattrocento</span> font.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-
-      <div className={`${styles.flexCenter} my-32`}>
-        <Image src="/hr.svg" alt="horizontal rule" width={1100} height={1} />
-      </div>
-
-      <div id="pair-5" className="flex flex-col gap-5">
-        <div className="flex gap-20">
-          <span
-            className={`${interTight.className} flex w-4/12 items-end justify-end font-bold italic text-rd`}
-          >
-            Bebas Neue
-          </span>
-          <h2 className={`${bebasNeue.className} w-6/12 text-5xl font-bold`}>
-            Heading Font
-          </h2>
-        </div>
-        <div className="flex gap-20">
-          <span
-            className={`${interTight.className} flex w-4/12 justify-end font-bold italic text-blgrn`}
-          >
-            Ubuntu Condensed
-          </span>
-          <p className={`${ubuntuCondensed.className} w-4/12 text-lg`}>
-            This is how the body would look like using{' '}
-            <span className="font-bold underline">Ubuntu Condensed</span> font.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-
-      <div className={`${styles.flexCenter} my-32`}>
-        <Image src="/hr.svg" alt="horizontal rule" width={1100} height={1} />
-      </div>
-
-      <h2 className={`${viga.className} text-center text-xl font-bold`}>
-        MORE FONT PAIRINGS TO COME. ^^
-      </h2>
-    </main>
+    </section>
   );
 }

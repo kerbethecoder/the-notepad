@@ -1,5 +1,5 @@
 import { viga } from '@/ui/fonts';
-import { NavigableTabs } from '@/components/index';
+import { NavigationTabs } from '@/components/index';
 
 export default function DevBlueprints() {
   const templates = {
@@ -99,7 +99,7 @@ export default function DevBlueprints() {
         ))}
       </div>
       <hr className="my-14 border border-blck/10" />
-      <NavigableTabs />
+      <NavigationTabs />
     </main>
   );
 }
