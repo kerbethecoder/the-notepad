@@ -93,7 +93,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div
+      {/* <div
         className={`${styles.flexBetween} mx-20 mb-60`}
         id="js-snippets-section"
       >
@@ -119,7 +119,7 @@ export default function Home() {
           width={550}
           height={150}
         />
-      </div>
+      </div> */}
 
       <div className={`${styles.flexCenter} my-40`}>
         <Image src="/hr.svg" alt="horizontal rule" width={1100} height={1} />
