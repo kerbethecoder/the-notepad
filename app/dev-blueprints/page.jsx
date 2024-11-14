@@ -55,12 +55,12 @@ export default function DevBlueprints() {
 
   return (
     <main className="mx-80 my-40">
-      <h1 className={`${viga.className} text-3xl`}>Quick Description</h1>
-      <p className="font-bold text-blck/60">
+      <h1 className={`${viga.className} text-3xl`}>Dev Blueprints</h1>
+      <p className="mb-10 font-bold text-blck/60">
         A growing collection of personalized guides on various topics, offering
-        practical insights for developers.
+        practical insights for developers such as these templates below.
       </p>
-      <div className="custom-scrollbar my-6 flex flex-row gap-4 overflow-x-auto py-4">
+      <div className="custom-scrollbar mb-6 flex flex-row gap-4 overflow-x-auto py-4">
         {/* TODO: put this on a separate page */}
         {Object.keys(templates).map((template, index) => (
           <div

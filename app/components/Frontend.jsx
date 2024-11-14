@@ -10,27 +10,27 @@ export default function Frontend() {
           starting. There are other methods in the internet if you&apos;re
           curious.
         </p>
-        <div className="my-2 space-y-1 px-4 text-sm">
+        <div className="my-2 space-y-2 px-4 text-sm">
           <p>
-            Install{' '}
+            1. Install{' '}
             <span className={`${inter.className} font-bold`}>gatsby-cli</span>:
           </p>
           <pre className="w-1/2 rounded bg-blck/80 px-3 py-2">
             <code className="font-bold text-yllw">$ npm i -g gatsby-cli</code>
           </pre>
-          <p>Check version to see if it&apos;s installed:</p>
+          <p>2. Check version to see if it&apos;s installed:</p>
           <pre className="w-1/2 rounded bg-blck/80 px-3 py-2">
             <code className="font-bold text-yllw">$ gatsby -v</code>
           </pre>
           <p>
-            Install the starter site (follow instructions from{' '}
+            3. Install the starter site (follow instructions from{' '}
             <a
               href="https://www.gatsbyjs.com/docs/starters/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-bold text-rd hover:text-rd/70"
             >
-              official docs ↗
+              official docs↗
             </a>
             ):
           </p>
@@ -44,7 +44,7 @@ export default function Frontend() {
               https://github.com/gatsbyjs/gatsby-starter-default
             </code>
           </pre>
-          <p>Run the final command:</p>
+          <p>4. Run the final command:</p>
           <pre className="w-1/2 whitespace-pre-wrap rounded bg-blck/80 px-3 py-2">
             <code className="font-bold text-yllw">$ gatsby develop</code>
           </pre>
@@ -69,7 +69,7 @@ export default function Frontend() {
             rel="noopener noreferrer"
             className="font-bold text-rd hover:text-rd/70"
           >
-            App Router ↗
+            App Router↗
           </a>{' '}
           and it is up to you for the other technologies.
         </p>
@@ -77,8 +77,10 @@ export default function Frontend() {
       <hr className="my-10 w-3/4 border border-blck/10" />
       <div>
         <h2 className={`${viga.className} text-xl`}>Vite Frontend Tooling:</h2>
-        <div className="my-2 space-y-1 px-4 text-sm">
-          <p className="mb-2">Starting your first Vite project:</p>
+        <div className="my-2 space-y-2 px-4 text-sm">
+          <p className="mb-2">
+            Start your first Vite project using this command:
+          </p>
           <pre className="w-1/2 whitespace-pre-wrap rounded bg-blck/80 px-3 py-2">
             <code className="font-bold text-yllw">
               $ npm create vite@latest
@@ -98,7 +100,7 @@ export default function Frontend() {
               rel="noopener noreferrer"
               className="font-bold text-rd hover:text-rd/70"
             >
-              github docs ↗
+              github docs↗
             </a>{' '}
             for more template information.
           </p>
