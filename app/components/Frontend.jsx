@@ -4,7 +4,7 @@ export default function Frontend() {
   return (
     <section>
       <div>
-        <h2 className={`${viga.className} text-xl`}>Gatsby Quick-Start</h2>
+        <h2 className={`${viga.className} text-xl`}>Gatsby Quick-Start:</h2>
         <p className="font-bold text-blck/60">
           Personally, creating a Gatsby app using the cli is the ideal way of
           starting. There are other methods in the internet if you&apos;re

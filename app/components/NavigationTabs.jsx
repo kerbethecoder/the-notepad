@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Frontend, UserAuth } from '@/components/index';
+import { Frontend, SshKey, GitHubRepo, GitCmds } from '@/components/index';
 
 export default function NavigationTabs() {
   const [activeTab, setActiveTab] = React.useState('Tab1');
@@ -12,7 +12,9 @@ export default function NavigationTabs() {
       <nav className="">
         {[
           ['Tab1', 'front-end'],
-          ['Tab2', 'user auth'],
+          ['Tab2', 'git cmds'],
+          ['Tab3', 'ssh key'],
+          ['Tab4', 'github repo'],
         ].map(([tab, title]) => (
           <button
             key={tab}
@@ -28,7 +30,13 @@ export default function NavigationTabs() {
         <Frontend />
       </div>
       <div className={activeTab === 'Tab2' ? 'px-3 py-10' : 'hidden'}>
-        <UserAuth />
+        <GitCmds />
+      </div>
+      <div className={activeTab === 'Tab3' ? 'px-3 py-10' : 'hidden'}>
+        <SshKey />
+      </div>
+      <div className={activeTab === 'Tab4' ? 'px-3 py-10' : 'hidden'}>
+        <GitHubRepo />
       </div>
     </section>
   );

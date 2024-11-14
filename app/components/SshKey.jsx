@@ -1,13 +1,13 @@
 import { viga, inter } from '@/ui/fonts';
 
-export default function UserAuth() {
+export default function SshKey() {
   return (
     <section>
       <div>
         <h2 className={`${viga.className} text-xl`}>
           User Authentication between local machine and GitHub:
         </h2>
-        <div className="border-l-4 border-blgrn px-2 font-bold text-blck/60">
+        <div className="my-2 border-l-4 border-blgrn p-2 font-bold text-blck/60">
           <p className="text-blgrn">Note:</p>
           <p className="px-2 text-sm">
             You can check these links for references:{' '}
