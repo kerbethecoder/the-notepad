@@ -1,4 +1,5 @@
 import '@/ui/globals.css';
+
 import { oxygen } from '@/ui/fonts';
 import { Nav, Footer } from '@/components/index';
 
