@@ -10,6 +10,20 @@ export default function SshKey() {
         <div className="my-2 border-l-4 border-blgrn p-2 font-bold text-blck/60">
           <p className="text-blgrn">Note:</p>
           <p className="px-2 text-sm">
+            You may encounter a prompt after establishing the connection for the
+            first time. It will let you decide to whether or not you trust the
+            key/fingerprint of GitHub. For more information, refer to this link
+            below:
+          </p>
+          <a
+            href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 text-sm font-bold text-rd hover:text-rd/70"
+          >
+            GitHub&apos;s SSH key fingerprints?↗
+          </a>
+          <p className="px-2 text-sm">
             You can check these links for references:{' '}
           </p>
           <ul className="px-4 text-sm">

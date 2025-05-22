@@ -32,12 +32,27 @@ Both extensions will automatically read your configurations and run with those.
 
 - Check if `nvm`, `npm`, and `node` or whatever you're using is updated or installed.
 
-  - updating/installing _nvm_
+  > [!NOTE]
+  >
+  > To install npm, you need to first download and install Node.js, as npm comes bundled with Node.js.
+
+  1. node version managers allows you to install and switch between multiple versions of `Node.js` and `npm` on your system so you can test your applications on multiple versions of npm to ensure they work for users on different versions. [reference](https://github.com/nvm-sh/nvm?tab=readme-ov-file#intro)
 
   ```
+  # for this one, I'll be using nvm. make sure to check for the latest version
   # to install
-  $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+  $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+  ```
 
+  - try this command, it should return "nvm". if not, try closing the terminal and open again, if the issue persists, proceed to the next step
+
+  ```
+  $ command -v nvm
+  ```
+
+  - if you don't see anything or it returns an error: "command not found". check the [reference](https://github.com/nvm-sh/nvm?tab=readme-ov-file#intro) for more info.
+
+  ```
   # source the nvm script depending on which shell your using
   $ source ~/.bashrc
 
@@ -45,7 +60,7 @@ Both extensions will automatically read your configurations and run with those.
   $ nvm -v
   ```
 
-  - updating/installing _node_
+  2. updating/installing _node_
 
   ```
   # to install/update node
@@ -55,37 +70,37 @@ Both extensions will automatically read your configurations and run with those.
   $ nvm -v
   ```
 
-  - updating/installng _npm_
+  3. _npm_ should be installed as well after installing node
 
   ```
-  # to update/install npm
-  $ npm install -g npm@latest
-
   # to check version
   $ npm -v
+
+  # to update/install npm
+  $ npm install -g npm@latest
   ```
 
-- Clone the project into your local machine.
+4. Clone the project into your local machine.
 
-  ```
-  # if cloning to a premade directory
-  $ git clone thisisyourpath@github.com .
+```
+# if cloning to a premade directory
+$ git clone thisisyourpath@github.com .
 
-  # otherwise
-  $ git clone thisisyourpath@github.com newfolder/
-  ```
+# otherwise
+$ git clone thisisyourpath@github.com newfolder/
+```
 
-  - Install packages.
+- Install packages.
 
-  ```
-  $ npm i
-  ```
+```
+$ npm i
+```
 
-  - Run the project.
+- Run the project.
 
-  ```
-  $ npm run dev
-  ```
+```
+$ npm run dev
+```
 
 ## Pages Overview
 
